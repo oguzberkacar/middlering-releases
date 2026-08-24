@@ -12,6 +12,10 @@ thumbnails, no cycling through twelve windows to reach the one behind you.
 
 **[⬇︎ Download for macOS](https://github.com/oguzberkacar/middlering-releases/releases/latest)**  ·  Apple Silicon · signed & notarized
 
+<br>
+
+<img src="media/ring.png" alt="The MiddleRing wheel open at the cursor with a window selected" width="700">
+
 </div>
 
 <br>
