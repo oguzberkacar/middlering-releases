@@ -5,6 +5,33 @@
         <description>MiddleRing güncellemeleri</description>
         <language>tr</language>
         <item>
+            <title>0.4.0</title>
+            <pubDate>Tue, 25 Aug 2026 14:34:18 +0000</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/oguzberkacar/middlering-releases/releases/tag/v0.4.0</link>
+            <description>&lt;p&gt;The ring now says when letting go will close it, and the plates behind the icons are optional.&lt;/p&gt;
+&lt;h4&gt;The centre says what it does&lt;/h4&gt;
+&lt;p&gt;Releasing with the cursor in the middle has always cancelled. Nothing said so. The ring used its accent colour to mean "this is what you are about to pick" and had no way to say "this is what you are about to *not* pick", so the safest thing you could do looked exactly like doing nothing.&lt;/p&gt;
+&lt;p&gt;It turns red now — the hub, the pointer, and the label, which reads &lt;strong&gt;Kapat&lt;/strong&gt;. Three channels rather than one: colour alone is not a message to anyone who does not see red as red.&lt;/p&gt;
+&lt;p&gt;Only after you have aimed at something at least once, or once the ring is parked. The ring opens with the cursor already in the middle, and a warning that fires every single time is one you learn to ignore.&lt;/p&gt;
+&lt;h4&gt;Bare icons&lt;/h4&gt;
+&lt;p&gt;Görünüm can take the material plate out from behind the icons. What is left is the icon and a shadow — depth without a panel — and the icon grows into the space the plate used to take up.&lt;/p&gt;
+&lt;p&gt;Selection survives it as a tight ring of accent light around the icon itself. Window previews keep their plate: the image is clipped to it, and a photograph with no edge bleeds into anything light behind it.&lt;/p&gt;
+&lt;h4&gt;Settings that say what they do&lt;/h4&gt;
+&lt;p&gt;Görünüm needed this most. Three sliders labelled with words that described the implementation rather than the effect, and nothing explaining any of them. They are grouped now, every control has a line saying what it changes, and "Ölü bölge" is "Merkez boşluğu".&lt;/p&gt;
+&lt;p&gt;Elsewhere: a modifier on a trackpad gesture now says that it is a requirement, not a bonus — left unsaid, the first thing it does is make the gesture look broken to whoever set it and forgot. The Screen Recording note links to the permission instead of reciting the path to it. The shortcut rows have column headings.&lt;/p&gt;
+&lt;h4&gt;Updating&lt;/h4&gt;
+&lt;p&gt;If you are on 0.3.0 this one arrives on its own — MiddleRing checks for itself now. 0.2.0 and earlier still need one manual install, after which they are on the same footing.&lt;/p&gt;
+&lt;h4&gt;Requirements&lt;/h4&gt;
+&lt;p&gt;macOS 14 or later, Apple Silicon. MiddleRing needs Accessibility permission — that is what lets it read the window list and bring a window forward. Screen Recording is only requested if you turn live previews on.&lt;/p&gt;
+&lt;h4&gt;Install&lt;/h4&gt;
+&lt;p&gt;Open the DMG, drag MiddleRing to Applications, launch it, and grant Accessibility when asked. It lives in the menu bar; there is no Dock icon.&lt;/p&gt;
+&lt;p&gt;Signed with a Developer ID certificate and notarized by Apple, so it opens without a Gatekeeper warning.&lt;/p&gt;</description>
+            <enclosure url="https://github.com/oguzberkacar/middlering-releases/releases/download/v0.4.0/MiddleRing-0.4.0.dmg" length="2442777" type="application/octet-stream" sparkle:edSignature="QIPM7OTcjM2UBTAeQBHEkhhZYM0Ivo70RDpQlp4bk+z5iJs3TRXiPfKCoM1fhoAHGgOf9IfkZTgEyUsFtF1sAA==" />
+        </item>
+        <item>
             <title>0.3.0</title>
             <pubDate>Tue, 25 Aug 2026 13:47:29 +0000</pubDate>
             <sparkle:version>3</sparkle:version>
