@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>MiddleRing</title>
+        <description>MiddleRing güncellemeleri</description>
+        <language>tr</language>
+        <item>
+            <title>0.3.0</title>
+            <pubDate>Tue, 25 Aug 2026 13:46:43 +0000</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/oguzberkacar/middlering-releases/releases/tag/v0.3.0</link>
+            <description>&lt;p&gt;Two more rings, a third thing right-click can do, trackpad gestures that take&lt;/p&gt;
+&lt;p&gt;modifiers — and, from this version on, MiddleRing updates itself.&lt;/p&gt;
+&lt;h4&gt;Quick access ring&lt;/h4&gt;
+&lt;p&gt;A fixed list of apps in the order you put them in. The switcher is ordered by&lt;/p&gt;
+&lt;p&gt;recency, which is the right answer for switching and the wrong one for muscle&lt;/p&gt;
+&lt;p&gt;memory; this ring never moves, so the direction is learnable.&lt;/p&gt;
+&lt;p&gt;A pinned app that is closed keeps its slot, shows a dimmed icon, and launches&lt;/p&gt;
+&lt;p&gt;when you commit it. One that has been uninstalled leaves the ring rather than&lt;/p&gt;
+&lt;p&gt;sitting there failing.&lt;/p&gt;
+&lt;h4&gt;App shortcut ring&lt;/h4&gt;
+&lt;p&gt;Keystrokes for whichever app is in front, under names you gave them. Open it in&lt;/p&gt;
+&lt;p&gt;Figma and you get Figma's; open it in a browser and you get the browser's.&lt;/p&gt;
+&lt;p&gt;Committing a slot posts that keystroke straight to the app.&lt;/p&gt;
+&lt;p&gt;A slot shows the keystroke by default — using the ring is how you stop needing&lt;/p&gt;
+&lt;p&gt;it — or a symbol picked from a short grid of SF Symbols and emoji, which is&lt;/p&gt;
+&lt;p&gt;quicker to pick out of a circle at speed. A "global" set sits under whatever the&lt;/p&gt;
+&lt;p&gt;frontmost app contributes, so the ring is not empty in an app you have not got&lt;/p&gt;
+&lt;p&gt;round to configuring.&lt;/p&gt;
+&lt;h4&gt;Solo&lt;/h4&gt;
+&lt;p&gt;Right-click a slot to minimize everything that does not belong to that app and&lt;/p&gt;
+&lt;p&gt;switch to it. App-level even when you aimed at a single window: "leave me with&lt;/p&gt;
+&lt;p&gt;this one" means the app you are about to work in.&lt;/p&gt;
+&lt;p&gt;A second solo on the same app restores exactly what the first one minimized —&lt;/p&gt;
+&lt;p&gt;not everything currently minimized, which would also undo whatever you had&lt;/p&gt;
+&lt;p&gt;tidied away yourself.&lt;/p&gt;
+&lt;h4&gt;Trackpad gestures take modifiers&lt;/h4&gt;
+&lt;p&gt;Kept separate from a ring's keyboard and mouse modifiers, so binding a ring to&lt;/p&gt;
+&lt;p&gt;⌃⌥⌘L does not silently demand ⌃⌥⌘ on its finger gesture too.&lt;/p&gt;
+&lt;p&gt;That also makes two fingers bindable. On its own it is the system's secondary&lt;/p&gt;
+&lt;p&gt;click and taking that from every app is not a setting anyone would look for&lt;/p&gt;
+&lt;p&gt;again; under ⌃ or ⌥ it is a gesture nothing else claims.&lt;/p&gt;
+&lt;h4&gt;It updates itself now&lt;/h4&gt;
+&lt;p&gt;The hard part of updating was never noticing that a new version exists — it is&lt;/p&gt;
+&lt;p&gt;replacing a running app in place with its Developer ID signature intact, and&lt;/p&gt;
+&lt;p&gt;getting that wrong costs you the Accessibility grant along with the app. So this&lt;/p&gt;
+&lt;p&gt;uses Sparkle, and the update feed is signed with a key whose private half never&lt;/p&gt;
+&lt;p&gt;leaves the developer's machine.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This is the last version you have to install by hand.&lt;/strong&gt; 0.2.0 shipped without&lt;/p&gt;
+&lt;p&gt;an updater, so it cannot pull this one down; from 0.3.0 onward MiddleRing checks&lt;/p&gt;
+&lt;p&gt;for itself and offers the update in place. There is a "Check for updates" item in&lt;/p&gt;
+&lt;p&gt;the menu bar and a switch in Settings › Genel if you would rather it did not.&lt;/p&gt;
+&lt;h4&gt;Also&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Rings are a list internally rather than two hand-copied blocks of settings, so&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  the next one costs an enum case. Triggers you had already chosen are migrated;&lt;/p&gt;
+&lt;p&gt;  nothing needs re-binding.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed: nested Sparkle components failed notarization on the first attempt,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  which is worth saying out loud because &lt;code&gt;codesign --deep --strict&lt;/code&gt; passes on&lt;/p&gt;
+&lt;p&gt;  exactly that mistake.&lt;/p&gt;
+&lt;h4&gt;Requirements&lt;/h4&gt;
+&lt;p&gt;macOS 14 or later, Apple Silicon. MiddleRing needs Accessibility permission —&lt;/p&gt;
+&lt;p&gt;that is what lets it read the window list and bring a window forward. Screen&lt;/p&gt;
+&lt;p&gt;Recording is only requested if you turn live previews on.&lt;/p&gt;
+&lt;h4&gt;Install&lt;/h4&gt;
+&lt;p&gt;Open the DMG, drag MiddleRing to Applications, launch it, and grant&lt;/p&gt;
+&lt;p&gt;Accessibility when asked. It lives in the menu bar; there is no Dock icon.&lt;/p&gt;
+&lt;p&gt;Signed with a Developer ID certificate and notarized by Apple, so it opens&lt;/p&gt;
+&lt;p&gt;without a Gatekeeper warning.&lt;/p&gt;</description>
+            <enclosure url="https://github.com/oguzberkacar/middlering-releases/releases/download/v0.3.0/MiddleRing-0.3.0.dmg" length="2427110" type="application/octet-stream" sparkle:edSignature="9nLwwIONynbJy7aoqaVP4r9sjERW9KHQXCV+fbteOVTdoKVr1EBqKkzk+W7ovhfP34H0X7Y6ANzQSIbp89eDDQ==" />
+        </item>
+    </channel>
+</rss>
