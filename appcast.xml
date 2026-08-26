@@ -5,6 +5,34 @@
         <description>MiddleRing güncellemeleri</description>
         <language>tr</language>
         <item>
+            <title>0.5.1</title>
+            <pubDate>Wed, 26 Aug 2026 11:55:30 +0000</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>0.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/oguzberkacar/middlering-releases/releases/tag/v0.5.1</link>
+            <description>&lt;p&gt;Fixes a ring slot that did nothing.&lt;/p&gt;
+&lt;h4&gt;What was broken&lt;/h4&gt;
+&lt;p&gt;Open an app from the ring, close it with the red button so it keeps living in the Dock, then pick it from the ring again — and nothing happens. Reported against pinned apps.&lt;/p&gt;
+&lt;p&gt;Two causes. Committing a pinned slot from the window ring went through the path that switches to an app rather than the one that knows how to start it: merging quick access into the window ring in 0.5.0 added the slot and did not connect it. In its own ring it worked.&lt;/p&gt;
+&lt;p&gt;The second is older, and is why this reproduced for some people and not others. The window list is rebuilt when apps launch, quit, activate or hide — and closing a window is none of those. So a slot can be holding a window that shut minutes ago with nothing having said so. Raising it fails quietly, the app comes to the front with no window, and from your side the slot did nothing at all.&lt;/p&gt;
+&lt;p&gt;Whether you hit it depended on whether anything else happened to refresh the list in between.&lt;/p&gt;
+&lt;h4&gt;What it does now&lt;/h4&gt;
+&lt;p&gt;Bringing a windowless app to the front and leaving it windowless is the wrong move. What clicking the Dock icon sends is a reopen, and a reopen is what makes an app produce a window — so that is what a slot with nothing behind it does.&lt;/p&gt;
+&lt;p&gt;Knowing when there is nothing behind it turned out to be the hard part. The window server reports six windows for a TextEdit showing one document, so counting them settles nothing. The ring stops guessing: it raises what it has, then checks a moment later whether a window actually appeared, and opens the app if none did.&lt;/p&gt;
+&lt;h4&gt;Also&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;A pinned app takes its windows from everything open rather than from whatever the ring was about to draw, so a pin on another display still switches to it instead of opening a second window.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;make test-activation&lt;/code&gt; walks these states and prints pass or fail, including the risk the new approach carries: reopening an app that already has a window leaves it with exactly one.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Requirements&lt;/h4&gt;
+&lt;p&gt;macOS 14 or later, Apple Silicon. MiddleRing needs Accessibility permission — that is what lets it read the window list and bring a window forward. Screen Recording is only requested if you turn live previews on.&lt;/p&gt;
+&lt;h4&gt;Install&lt;/h4&gt;
+&lt;p&gt;If you are on 0.3.0 or later this arrives on its own. Otherwise open the DMG, drag MiddleRing to Applications, launch it, and grant Accessibility when asked. It lives in the menu bar; there is no Dock icon.&lt;/p&gt;
+&lt;p&gt;Signed with a Developer ID certificate and notarized by Apple, so it opens without a Gatekeeper warning.&lt;/p&gt;</description>
+            <enclosure url="https://github.com/oguzberkacar/middlering-releases/releases/download/v0.5.1/MiddleRing-0.5.1.dmg" length="2479062" type="application/octet-stream" sparkle:edSignature="MHfDCfdbm6KmTsrYUXlAvJPcZK7l39G0VPrFp3ilpvkXxHgTA4iJOK2s8AclJMe+BL3V3hVb2WTKD6UDEvEcBA==" />
+        </item>
+        <item>
             <title>0.5.0</title>
             <pubDate>Wed, 26 Aug 2026 08:07:05 +0000</pubDate>
             <sparkle:version>5</sparkle:version>
