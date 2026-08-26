@@ -5,6 +5,35 @@
         <description>MiddleRing güncellemeleri</description>
         <language>tr</language>
         <item>
+            <title>0.5.0</title>
+            <pubDate>Wed, 26 Aug 2026 08:07:05 +0000</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/oguzberkacar/middlering-releases/releases/tag/v0.5.0</link>
+            <description>&lt;p&gt;The two rings that offered the same apps now know about each other, and a pinned app can look like whatever you want it to.&lt;/p&gt;
+&lt;h4&gt;Pins in the window ring&lt;/h4&gt;
+&lt;p&gt;Quick access can hold the front of the window ring as well — of &lt;strong&gt;every page&lt;/strong&gt;, not just the first. The direction to a pin is then the same on the third page as on the first, which is the entire point of pinning something.&lt;/p&gt;
+&lt;p&gt;A pinned app that happens to be running is taken out of the window list and given that app's windows, so the pin is the same slot the switcher would have shown, in a place that does not move, rather than a second slot for the same app. Its fan still opens.&lt;/p&gt;
+&lt;p&gt;Off by default. Pins spend slots that would otherwise show windows, and Settings states the trade with your own numbers rather than in the abstract: how many slots the pins take on each page and how many are left for windows.&lt;/p&gt;
+&lt;h4&gt;Pins can carry their own icon&lt;/h4&gt;
+&lt;p&gt;An SF Symbol, an emoji, or an image file. Leave it and you get the app's own icon, which is the right answer nearly always.&lt;/p&gt;
+&lt;p&gt;Image files are copied into the app's support folder rather than remembered by path. Remembering the path is the obvious thing, and the obvious thing turns a ring slot blank the first time you tidy your Downloads folder, for reasons nothing on screen can explain.&lt;/p&gt;
+&lt;p&gt;The shortcut rows gained image upload at the same time — they share the picker.&lt;/p&gt;
+&lt;h4&gt;Fixed&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Pinned slots read "Opera.app" if you have Finder set to show every extension, while the same app in the window ring read "Opera". The bundle's own name is used now, so the two agree.&lt;/li&gt;
+&lt;li&gt;The page dots miscounted once pins were at the front, because the page count was being worked out from how many slots were on screen.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--demo&lt;/code&gt; built its own slots and skipped the merge, which made the one way to look at this feature the one way that did not have it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Requirements&lt;/h4&gt;
+&lt;p&gt;macOS 14 or later, Apple Silicon. MiddleRing needs Accessibility permission — that is what lets it read the window list and bring a window forward. Screen Recording is only requested if you turn live previews on.&lt;/p&gt;
+&lt;h4&gt;Install&lt;/h4&gt;
+&lt;p&gt;If you are on 0.3.0 or later this arrives on its own. Otherwise open the DMG, drag MiddleRing to Applications, launch it, and grant Accessibility when asked. It lives in the menu bar; there is no Dock icon.&lt;/p&gt;
+&lt;p&gt;Signed with a Developer ID certificate and notarized by Apple, so it opens without a Gatekeeper warning.&lt;/p&gt;</description>
+            <enclosure url="https://github.com/oguzberkacar/middlering-releases/releases/download/v0.5.0/MiddleRing-0.5.0.dmg" length="2469897" type="application/octet-stream" sparkle:edSignature="ixB0/XgBLZf98c8bxIdDq2njhXY9RhI1Y7FRk/JAkXaQzCKeyIziDaQhVPL9uA3ebwcyXyIgBrl3N7gTY1PLCQ==" />
+        </item>
+        <item>
             <title>0.4.0</title>
             <pubDate>Tue, 25 Aug 2026 14:34:18 +0000</pubDate>
             <sparkle:version>4</sparkle:version>
