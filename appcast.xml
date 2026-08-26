@@ -5,6 +5,25 @@
         <description>MiddleRing güncellemeleri</description>
         <language>tr</language>
         <item>
+            <title>0.6.0</title>
+            <pubDate>Wed, 26 Aug 2026 12:40:43 +0000</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/oguzberkacar/middlering-releases/releases/tag/v0.6.0</link>
+            <description>&lt;p&gt;The disc in the middle of the ring is sizeable now.&lt;/p&gt;
+&lt;h4&gt;A smaller hub&lt;/h4&gt;
+&lt;p&gt;Reported as too big, which it was for anyone who wanted the ring to take up less room — the hub was the one part of it that could not be changed. Settings › Görünüm › Ölçüler › &lt;strong&gt;Ortadaki daire&lt;/strong&gt;, 64 to 170 points.&lt;/p&gt;
+&lt;p&gt;The catch is that the hub carries type drawn for exactly one size. Shrinking the disc and leaving the label alone overflows it, so everything inside now shrinks with the disc. There is a floor past which the label stops being readable, and a hub too small to read is worse than one slightly overfull.&lt;/p&gt;
+&lt;p&gt;At the small end the hub sits inside the deadzone. That is fine: the band between them already shows the pointer with nothing selected, and already turns red to say that letting go there closes the ring.&lt;/p&gt;
+&lt;h4&gt;Requirements&lt;/h4&gt;
+&lt;p&gt;macOS 14 or later, Apple Silicon. MiddleRing needs Accessibility permission — that is what lets it read the window list and bring a window forward. Screen Recording is only requested if you turn live previews on.&lt;/p&gt;
+&lt;h4&gt;Install&lt;/h4&gt;
+&lt;p&gt;If you are on 0.3.0 or later this arrives on its own. Otherwise open the DMG, drag MiddleRing to Applications, launch it, and grant Accessibility when asked. It lives in the menu bar; there is no Dock icon.&lt;/p&gt;
+&lt;p&gt;Signed with a Developer ID certificate and notarized by Apple, so it opens without a Gatekeeper warning.&lt;/p&gt;</description>
+            <enclosure url="https://github.com/oguzberkacar/middlering-releases/releases/download/v0.6.0/MiddleRing-0.6.0.dmg" length="2484195" type="application/octet-stream" sparkle:edSignature="7L+RZWg41xaSEbzuCEynKTpPRJW8BBVc9jFiHrWzcMht/GjTpR4S0hJFsqVZqR5MkgBYCYDNpZJ26R56/hYSDg==" />
+        </item>
+        <item>
             <title>0.5.1</title>
             <pubDate>Wed, 26 Aug 2026 11:55:30 +0000</pubDate>
             <sparkle:version>6</sparkle:version>
