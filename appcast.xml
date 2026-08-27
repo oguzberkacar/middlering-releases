@@ -5,6 +5,41 @@
         <description>MiddleRing güncellemeleri</description>
         <language>tr</language>
         <item>
+            <title>0.7.1</title>
+            <pubDate>Thu, 27 Aug 2026 12:32:37 +0000</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/oguzberkacar/middlering-releases/releases/tag/v0.7.1</link>
+            <description>&lt;p&gt;A fix for 0.7.0, and it is the reason to update now.&lt;/p&gt;
+&lt;h4&gt;The close button was closing windows nobody asked it to&lt;/h4&gt;
+&lt;p&gt;Reported within an hour of 0.7.0 shipping: windows closing on their own while triggering, whole apps disappearing, one of them while the reporter was typing the message. If you are on 0.7.0, this is worth updating for today.&lt;/p&gt;
+&lt;p&gt;The close × introduced in 0.7.0 had its hit area *on* the slot rather than beside it — centred exactly on the tile's corner, so the top-right of every slot was a close button. Aiming in MiddleRing is by direction and the cursor never has to touch a slot, but nothing on screen says that: a parked ring puts tiles in front of you and tiles are what look clickable. So the cursor went onto them, and the click landed on the button.&lt;/p&gt;
+&lt;p&gt;With the default content setting every slot is an *app*, and closing an app slot closes every window that app has, at once. That is why it read as a whole session vanishing rather than one window going.&lt;/p&gt;
+&lt;p&gt;Three things now stand between a cursor and a closed window instead of one: the button sits outside the tile rather than on its corner, its hit area is smaller, and it does nothing at all until the cursor has been still on it for a fifth of a second. It only turns red once it is armed, so what it looks like and what a click will do are the same thing.&lt;/p&gt;
+&lt;h4&gt;It logged you out instead of going to sleep&lt;/h4&gt;
+&lt;p&gt;The worse half of the same report, and a much older bug than the button above.&lt;/p&gt;
+&lt;p&gt;When the ring decides not to open — the machine is going to sleep, the front app is on your exception list, nothing passed the screen filter — it used to let the trigger through to whatever else wanted it. That is right for a mouse button: a middle click that opens nothing should still open a tab. Applied to a keyboard shortcut it handed your own binding to macOS, and macOS owns a lot of them. ⇧⌘Q logs out. ⌃⌘Q locks the screen. ⌥⌘⎋ force-quits.&lt;/p&gt;
+&lt;p&gt;Sleeping is one of the moments the ring refuses. So a Mac that logged out instead of sleeping, closing every app on the way, was doing exactly what it had been asked — by a keystroke this app decided not to keep.&lt;/p&gt;
+&lt;p&gt;A keyboard trigger is now swallowed whether or not the ring opens. You bound it to MiddleRing; it belongs to MiddleRing even when MiddleRing has nothing to show. Mouse buttons and trackpad gestures still pass through, for the reason they always did.&lt;/p&gt;
+&lt;p&gt;That is not the whole answer, because the app is not always running — a paused or quit MiddleRing hands the shortcut back. So the trigger editor now warns you by name if you bind one the system already owns.&lt;/p&gt;
+&lt;h4&gt;A click could stick after using the ring&lt;/h4&gt;
+&lt;p&gt;Older, and it leaked outside the app. After acting on a slot with a right-click, the next click you made anywhere could lose its mouse-up — leaving the app underneath in a stuck drag or a selection that would not let go. Fixed.&lt;/p&gt;
+&lt;h4&gt;Also&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;The settings text for the right-click actions said "the window you are aiming at". On an app slot that is every window the app has. It now says so, which matters most for the close action: it fires on press, with no delay, and the whole wedge of that slot is its target.&lt;/li&gt;
+&lt;li&gt;Resuming from Pause could quietly fail if Accessibility had been revoked, leaving the menu offering to pause something that was not running.&lt;/li&gt;
+&lt;li&gt;Solo's undo record was written on one thread and read on another.&lt;/li&gt;
+&lt;li&gt;The parked ring's hint in the centre disc was truncated in English.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Requirements&lt;/h4&gt;
+&lt;p&gt;macOS 14 or later, Apple Silicon. MiddleRing needs Accessibility permission — that is what lets it read the window list and bring a window forward. Screen Recording is only requested if you turn live previews on.&lt;/p&gt;
+&lt;h4&gt;Install&lt;/h4&gt;
+&lt;p&gt;If you are on 0.3.0 or later this arrives on its own. Otherwise open the DMG, drag MiddleRing to Applications, launch it, and grant Accessibility when asked. It lives in the menu bar; there is no Dock icon.&lt;/p&gt;
+&lt;p&gt;Signed with a Developer ID certificate and notarized by Apple, so it opens without a Gatekeeper warning.&lt;/p&gt;</description>
+            <enclosure url="https://github.com/oguzberkacar/middlering-releases/releases/download/v0.7.1/MiddleRing-0.7.1.dmg" length="2619563" type="application/octet-stream" sparkle:edSignature="7xPngGQAJmyN5K5YE5+K0J+kn/uE5EYqgcMnC69vw10S7ZrYdqzyGgyzdJ0/NzY6Gr8wUJZ8kj6EWIo9cq25Ag==" />
+        </item>
+        <item>
             <title>0.7.0</title>
             <pubDate>Thu, 27 Aug 2026 10:42:26 +0000</pubDate>
             <sparkle:version>8</sparkle:version>
