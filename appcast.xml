@@ -5,6 +5,36 @@
         <description>MiddleRing güncellemeleri</description>
         <language>tr</language>
         <item>
+            <title>0.8.0</title>
+            <pubDate>Thu, 27 Aug 2026 13:17:32 +0000</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>0.8.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/oguzberkacar/middlering-releases/releases/tag/v0.8.0</link>
+            <description>&lt;p&gt;MiddleRing speaks your language now, and the shortcut ring comes with something in it.&lt;/p&gt;
+&lt;h4&gt;Pick a language&lt;/h4&gt;
+&lt;p&gt;Settings › General › &lt;strong&gt;Language&lt;/strong&gt;. English, Türkçe, Deutsch, Français, Español, 日本語, 简体中文 — or "Same as macOS", which is what it does until told otherwise.&lt;/p&gt;
+&lt;p&gt;Each language is named in itself. "German" is no use to someone who cannot read the list it is written in, which is exactly who that row is for.&lt;/p&gt;
+&lt;p&gt;This was left out of 0.7.0 on the grounds that macOS already has a per-app language list, and a second switch for the same setting is a second place to be wrong. That was the wrong call: System Settings hides that list until an app has been localized *and* noticed, so for most people it is not there to find.&lt;/p&gt;
+&lt;p&gt;Changing it needs a restart, because an app reads its language once when it starts. The button that offers one takes the input tap down before starting the new copy, so two copies of MiddleRing never hold one at the same moment.&lt;/p&gt;
+&lt;h4&gt;Shortcut sets that come with the app&lt;/h4&gt;
+&lt;p&gt;The shortcut ring's real problem was never sending a keystroke. It was that an empty ring asks you to remember the very things you opened it because you had forgotten.&lt;/p&gt;
+&lt;p&gt;MiddleRing now knows sets for **Figma, Chrome, Safari, VS Code, Xcode, Slack, Notion and the Finder**. Adding one of those in Settings › Shortcuts starts from its set instead of an empty row, and a set you have already edited can pull in whatever it is missing without losing your changes — the match is on the keystroke rather than the name, so "Command palette" renamed to "palette" is still ⇧⌘P and is not offered back.&lt;/p&gt;
+&lt;p&gt;Every entry is a combination the app itself documents rather than one that was guessed, because a shortcut that quietly does the wrong thing is harder to notice than one that does nothing. And every entry carries a modifier: a bare letter sent into a text field types the letter, and the ring cannot know whether the caret is in one.&lt;/p&gt;
+&lt;h4&gt;Also&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Shortcut rows showed "What does it do?" beside the name you had given them.&lt;/li&gt;
+&lt;li&gt;Keystrokes on punctuation keys — ⌘\ and ⇧⌘. — were drawn as "Key 42".&lt;/li&gt;
+&lt;li&gt;One string in the shortcuts pane was still Turkish in every language.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Requirements&lt;/h4&gt;
+&lt;p&gt;macOS 14 or later, Apple Silicon. MiddleRing needs Accessibility permission — that is what lets it read the window list and bring a window forward. Screen Recording is only requested if you turn live previews on.&lt;/p&gt;
+&lt;h4&gt;Install&lt;/h4&gt;
+&lt;p&gt;If you are on 0.3.0 or later this arrives on its own. Otherwise open the DMG, drag MiddleRing to Applications, launch it, and grant Accessibility when asked. It lives in the menu bar; there is no Dock icon.&lt;/p&gt;
+&lt;p&gt;Signed with a Developer ID certificate and notarized by Apple, so it opens without a Gatekeeper warning.&lt;/p&gt;</description>
+            <enclosure url="https://github.com/oguzberkacar/middlering-releases/releases/download/v0.8.0/MiddleRing-0.8.0.dmg" length="2650706" type="application/octet-stream" sparkle:edSignature="0vq7SgrI92QsBOAfqOrIzF5Y5NjfS8Kn0CUSY/dnRg/SECwfUIAu2RyrbWHDbcDWa5n2z7c3awVeUq+4vht5AQ==" />
+        </item>
+        <item>
             <title>0.7.1</title>
             <pubDate>Thu, 27 Aug 2026 12:32:37 +0000</pubDate>
             <sparkle:version>9</sparkle:version>
