@@ -5,6 +5,35 @@
         <description>MiddleRing güncellemeleri</description>
         <language>tr</language>
         <item>
+            <title>0.7.0</title>
+            <pubDate>Thu, 27 Aug 2026 10:42:26 +0000</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>0.7.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/oguzberkacar/middlering-releases/releases/tag/v0.7.0</link>
+            <description>&lt;p&gt;The ring stopped working after the Mac woke up. It does not any more — and there is a close button on the slot you are aiming at.&lt;/p&gt;
+&lt;h4&gt;It went deaf after sleeping&lt;/h4&gt;
+&lt;p&gt;Reported as "it works until the Mac sleeps, then some apps trigger it and some do not, and quitting and reopening fixes it". Three causes, which is why it looked so inconsistent.&lt;/p&gt;
+&lt;p&gt;The one that made it stick: a display that dozes on its own and a machine that really sleeps announce themselves with different notifications, and only one of each pair is ever sent. MiddleRing raised its "nothing may be drawn" flag on one and lowered it on the other, so a display that slept by itself left the flag up forever and every trigger after that was refused. Restarting cleared it, which is exactly what you saw.&lt;/p&gt;
+&lt;p&gt;Why it looked app-dependent: the ring filters windows by which screen they are on, using frames it caches — and a display waking or being re-attached moves every window without telling anyone. The cached frames then belong to an arrangement that no longer exists, the per-screen filter drops all of them, and the ring refuses to open for the apps on that display and no others. The cache is now rebuilt on wake and whenever the screen arrangement changes.&lt;/p&gt;
+&lt;p&gt;And the input tap itself can come back from a sleep attached to something the system has already let go of, looking healthy by every quick check and hearing nothing. It is now tested properly and rebuilt rather than nudged.&lt;/p&gt;
+&lt;p&gt;None of the three said anything while failing, because every way the ring can decline to open looks the same from outside — the trigger fires and nothing happens. Each one now writes its reason to &lt;code&gt;/tmp/middlering-ring.log&lt;/code&gt;.&lt;/p&gt;
+&lt;h4&gt;A close button on the slot&lt;/h4&gt;
+&lt;p&gt;Park the ring — a quick tap rather than a hold — and the slot you are aiming at grows a small × on its corner. Move onto it and click: that window closes and the ring stays up for the next one. On an app slot it closes every window that app has, which is what picking the app rather than one window has always meant here. A slot with nothing to close never grows one.&lt;/p&gt;
+&lt;p&gt;It presses the window's own close button rather than sending ⌘W, so an app with unsaved work asks about it exactly as it would have if you had reached for the window yourself.&lt;/p&gt;
+&lt;p&gt;Only on a parked ring, and that is deliberate. The corner sits about 10° off the slot's own direction — inside the sector that slot owns — so a flick aimed a little wide passes straight through it, and letting go there would close the window you were reaching for. Parking is the difference between a hand throwing the cursor and a hand placing it. In "hold and release" mode the ring never parks, so the × never appears; the right-click action is the way to close from there.&lt;/p&gt;
+&lt;p&gt;Settings › Trigger › &lt;strong&gt;Kapat düğmesi&lt;/strong&gt; switches it off.&lt;/p&gt;
+&lt;h4&gt;The name in the hub stops jumping&lt;/h4&gt;
+&lt;p&gt;It used to be the first line of a centred stack, so every line that appeared underneath pushed it up and every line that left dropped it back — stepping between two slots where one has a subtitle and the other does not made the name move on every step. It now holds a fixed place in the middle and everything else hangs below it.&lt;/p&gt;
+&lt;p&gt;Those lines can also go entirely: Settings › Görünüm › **Ortadaki dairede ad altı satırlar**. That is the app name under a window title and the `tıkla seç · esc iptal` reminder. Worth saying once, not worth saying under every slot you step through.&lt;/p&gt;
+&lt;h4&gt;Requirements&lt;/h4&gt;
+&lt;p&gt;macOS 14 or later, Apple Silicon. MiddleRing needs Accessibility permission — that is what lets it read the window list and bring a window forward. Screen Recording is only requested if you turn live previews on.&lt;/p&gt;
+&lt;h4&gt;Install&lt;/h4&gt;
+&lt;p&gt;If you are on 0.3.0 or later this arrives on its own. Otherwise open the DMG, drag MiddleRing to Applications, launch it, and grant Accessibility when asked. It lives in the menu bar; there is no Dock icon.&lt;/p&gt;
+&lt;p&gt;Signed with a Developer ID certificate and notarized by Apple, so it opens without a Gatekeeper warning.&lt;/p&gt;</description>
+            <enclosure url="https://github.com/oguzberkacar/middlering-releases/releases/download/v0.7.0/MiddleRing-0.7.0.dmg" length="2497580" type="application/octet-stream" sparkle:edSignature="zQFbUKI0SpBB7QJ/pWSU2EvKabRr7X2qAVPGkYYZr5n0erK0rMoFXETwxJIxINwRwIz5VgikoCWr3JVxy3imDQ==" />
+        </item>
+        <item>
             <title>0.6.0</title>
             <pubDate>Wed, 26 Aug 2026 12:40:43 +0000</pubDate>
             <sparkle:version>7</sparkle:version>
